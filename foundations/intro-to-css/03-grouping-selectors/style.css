@@ -1,1 +1,32 @@
-/* Add CSS Styling */
+/* ORIGINAL ATTEMPT
+
+.modify-font {
+    font-family: Helvetica, "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+}
+
+.button2 {
+    background-color: hsl(49, 100%, 48%);
+}
+
+*/
+
+.button1,
+.button2 {
+    font-family: Helvetica, "Times New Roman", sans-serif;
+    font-size: 28px;
+}
+
+.button1 {
+    background-color: black;
+    color: white;
+}
+
+.button2 {
+    background-color: hsl(55, 100%, 50%);
+}
