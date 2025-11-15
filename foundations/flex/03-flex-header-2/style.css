@@ -12,6 +12,10 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  /* Space-between is what separates the .left and .right; because there are only two containers in it, they are pushed to the edge and it leaves the middle flexible. */
+  padding: 8px;
 }
 
 .profile-image {
@@ -20,6 +24,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+
 }
 
 .logo {
@@ -45,4 +50,16 @@ a {
 
 ul {
   list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  gap: 16px;
 }
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Something else I want to make note of: the .left and .right containers are different sizes because their contents are different. If we wanted to, we could add more padding around the right side to make the container the same size. Just wanted to leave this here to remind myself that the content within a container (when not explicity managed with width, height, padding, etc.) will determine the containers size (at least the width). */
